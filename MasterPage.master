@@ -6,17 +6,40 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>machinist</title>
+    <link rel="stylesheet" type="text/css" href="Styles/MasterPage.css" />
     <asp:ContentPlaceHolder id="head" runat="server">
-        <link rel="stylesheet" type="text/css" href="Styles/MasterPage.css" />
+        
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="topBar">
+
+            <asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/Images/logo.png" CssClass="logo" />
+            <div class="navigation">
+
+                <asp:LinkButton ID="lnkDIY" runat="server" CssClass="nav-title">在线组装</asp:LinkButton>
+                <asp:LinkButton ID="lnkCollection" runat="server" CssClass="nav-title">个人收藏</asp:LinkButton>
+                <asp:LinkButton ID="lnkCommunication" runat="server" CssClass="nav-title">装机交流</asp:LinkButton>
+
+            </div>
+            <div class="login">
+
+                <asp:LinkButton ID="lnkLogin" runat="server" ForeColor="Blue">登录</asp:LinkButton>
+
+            </div>
+
+        </div>
     <div>
         <asp:ContentPlaceHolder id="body" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>
+        <div class="footer">
+            <p>Copyright © author:王梓安</p>
+            <p>2016级计算机科学与技术系</p>
+            <p>2016020800142</p>
+        </div>
     </form>
 </body>
 </html>

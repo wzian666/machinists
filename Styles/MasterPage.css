@@ -1,1 +1,59 @@
-﻿
+﻿body {
+    font-family: "microsoft yahei",simsun,arial;
+    min-width: 1260px;
+}
+
+body {
+    font: 12px/1.5 simsun,arial,"microsoft yahei";
+    background-color: #fff;
+}
+
+a, body {
+    color: #333;
+}
+
+a, b, body, br, button, col, dd, div, dl, dt, em, fieldset, form, frame, frameset, h1, h2, h3, h4, h5, h6, head, html, i, iframe, img, input, label, legend, li, map, ol, option, p, select, span, table, tbody, td, textarea, tfoot, th, thead, tr, ul {
+    padding: 0;
+    margin: 0;
+}
+
+.topBar {
+    width: 1260px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    zoom: 1;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.logo {
+    float: left;
+    width: 295px;
+    height: 75px;
+    margin-right: 70px;
+}
+
+.navigation {
+    display: inline;
+    float: left;
+    margin-right: 30px;
+}
+
+.nav-title {
+    line-height: 75px;
+    margin-right: 28px;
+    font-size: 32px;
+}
+
+.login {
+    float: right;
+    display: inline;
+    line-height: 75px;
+}
+
+.footer {
+    padding-top: 25px;
+    text-align: center;
+    background-color: #e0e0e0;
+}
