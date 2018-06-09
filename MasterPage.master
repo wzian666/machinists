@@ -10,6 +10,11 @@
     <asp:ContentPlaceHolder id="head" runat="server">
         
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .新建样式1 {
+            font-size: large;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -30,6 +35,14 @@
             </div>
 
         </div>
+
+        <div class="map">
+
+            <span class="新建样式1">当前位置：</span><asp:SiteMapPath ID="smpMap" runat="server" Font-Size="Large">
+            </asp:SiteMapPath>
+
+        </div>
+
     <div>
         <asp:ContentPlaceHolder id="body" runat="server">
         
