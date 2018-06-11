@@ -8,10 +8,11 @@
 
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
-                <asp:Button ID="btnRefresh" runat="server" Text="Button" />
+                <asp:Button ID="btnRefresh" runat="server" Text="刷新" OnClick="btnRefresh_Click" />
                 <asp:ScriptManager ID="ScriptManager1" runat="server">
                 </asp:ScriptManager>
-                <asp:GridView ID="gvUsers" runat="server" Width="1260px">
+                <asp:GridView ID="gvUsers" runat="server" Width="1260px" OnRowDataBound="gvUsers_RowDataBound">
+                    <HeaderStyle BackColor="#66FFFF" />
                 </asp:GridView>
             </ContentTemplate>
         </asp:UpdatePanel>

@@ -16,20 +16,19 @@
             <tr>
                 <td style="font-size: large; text-align: right">用户名：</td>
                 <td>
-                    <asp:TextBox ID="lblName" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="lblName" ErrorMessage="请输入用户名" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td style="font-size: large; text-align: right">密码：</td>
                 <td>
-                    <asp:TextBox ID="lblPassword" runat="server" TextMode="Password"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="lblPassword" ErrorMessage="请输入密码" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td style="text-align: right">
-                    <asp:Button ID="btnSubmit" runat="server" Text="登录" />
+                    <asp:Label ID="lblRet" runat="server" ForeColor="Red"></asp:Label>
+                    <asp:Button ID="btnSubmit" runat="server" Text="登录" OnClick="btnSubmit_Click" />
                 </td>
                 <td style="font-size: large">还没有账号？<asp:LinkButton ID="lnkRegister" runat="server" Font-Size="Large" ForeColor="Blue" OnClick="lnkRegister_Click">点击注册</asp:LinkButton>
                 </td>

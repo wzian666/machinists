@@ -33,10 +33,10 @@
             </tr>
             <tr>
                 <td style="text-align: right">
-                    <asp:Button ID="btnSubmit" runat="server" Text="注册" />
+                    <asp:Button ID="btnSubmit" runat="server" Text="注册" OnClick="btnSubmit_Click" />
                 </td>
                 <td>
-                    <asp:Button ID="btnRefresh" runat="server" Text="重置" />
+                    <asp:Button ID="btnRefresh" runat="server" Text="重置" OnClick="btnRefresh_Click" />
                 </td>
             </tr>
         </table>

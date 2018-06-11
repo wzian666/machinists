@@ -9,7 +9,10 @@ public partial class manager_index : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["name"].ToString() != "admin")
+        {
+            Response.Redirect("~/login.aspx?wrong=" + "1");
+        }
     }
     protected void lnkUsers_Click(object sender, EventArgs e)
     {

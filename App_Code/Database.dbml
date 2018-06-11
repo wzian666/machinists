@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Category" Member="Category">
+    <Type Name="Category">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Category_Equipment" Member="Equipment" ThisKey="id" OtherKey="category" Type="Equipment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Equipment" Member="Equipment">
+    <Type Name="Equipment">
+      <Column Name="id" AutoSync="Never" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="category" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Category_Equipment" Member="Category1" ThisKey="category" OtherKey="id" Type="Category" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Members" Member="Members">
+    <Type Name="Members">
+      <Column Name="id" AutoSync="Never" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Projects" Member="Projects">
+    <Type Name="Projects">
+      <Column Name="id" AutoSync="Never" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="author" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CPU" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MM" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GPU" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SM" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="board" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="release" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
