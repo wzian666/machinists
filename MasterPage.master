@@ -14,23 +14,29 @@
         .新建样式1 {
             font-size: large;
         }
+
+        .background {
+            background:#fff url(../Images/background.jpg) no-repeat left top;
+            background-size:100%;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="background">
         <div class="topBar">
 
-            <asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/Images/logo.png" CssClass="logo" />
+            <asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/Images/logo.png" CssClass="logo" OnClick="imgLogo_Click" />
             <div class="navigation">
 
-                <asp:LinkButton ID="lnkDIY" runat="server" CssClass="nav-title">在线组装</asp:LinkButton>
-                <asp:LinkButton ID="lnkCollection" runat="server" CssClass="nav-title">个人收藏</asp:LinkButton>
-                <asp:LinkButton ID="lnkCommunication" runat="server" CssClass="nav-title">装机交流</asp:LinkButton>
+                <asp:LinkButton ID="lnkDIY" runat="server" CssClass="nav-title" OnClick="lnkDIY_Click">在线组装</asp:LinkButton>
+                <asp:LinkButton ID="lnkCollection" runat="server" CssClass="nav-title" OnClick="lnkCollection_Click">个人收藏</asp:LinkButton>
+                <asp:LinkButton ID="lnkCommunication" runat="server" CssClass="nav-title" OnClick="lnkCommunication_Click">装机交流</asp:LinkButton>
 
             </div>
             <div class="login">
 
-                <asp:LinkButton ID="lnkLogin" runat="server" ForeColor="Blue">登录</asp:LinkButton>
+                <asp:LinkButton ID="lnkLogin" runat="server" ForeColor="Blue" OnClick="lnkLogin_Click">登录</asp:LinkButton>
 
             </div>
 
@@ -48,6 +54,7 @@
         
         </asp:ContentPlaceHolder>
     </div>
+            </div>
         <div class="footer">
             <p>Copyright © author:王梓安</p>
             <p>2016级计算机科学与技术系</p>

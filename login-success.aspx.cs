@@ -11,4 +11,20 @@ public partial class login_success : System.Web.UI.Page
     {
 
     }
+    protected void lnkDIY_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/DIY.aspx");
+    }
+    protected void lnkCollection_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/collection.aspx");
+    }
+    protected void lnkCommunication_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/communication.aspx");
+    }
+    protected void lnkManager_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/manager-index.aspx");
+    }
 }

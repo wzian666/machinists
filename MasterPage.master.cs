@@ -11,4 +11,24 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
 
     }
+    protected void imgLogo_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("~/index.aspx");
+    }
+    protected void lnkDIY_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/DIY.aspx");
+    }
+    protected void lnkCollection_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/collection.aspx");
+    }
+    protected void lnkCommunication_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/communication.aspx");
+    }
+    protected void lnkLogin_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/login.aspx");
+    }
 }

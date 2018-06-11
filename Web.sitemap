@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-    <siteMapNode url="~/index.aspx" title="主页"  description="主页">
+    <siteMapNode url="~/index.aspx" title="首页"  description="首页">
       <siteMapNode url="~/DIY.aspx" title="在线组装"  description="在线组装" />
       <siteMapNode url="~/collection.aspx" title="个人收藏"  description="个人收藏" />
       <siteMapNode url="~/communication.aspx" title="装机交流" description="装机交流" />
       <siteMapNode url="~/login.aspx" title="登录" description="登录">
-        <siteMapNode url="~/login-success.aspx" title="登录" description="登录" />
+        <siteMapNode url="~/login-success.aspx" title="登录成功" description="登录成功" />
+      </siteMapNode>
+      <siteMapNode url="~/register.aspx" title="注册" description="注册" />
+      <siteMapNode url="~/manager-index.aspx" title="管理员入口" description="管理员入口">
+        <siteMapNode url="~/manager-users.aspx" title="用户管理" description="用户管理" />
+        <siteMapNode url="~/manager-equipment.aspx" title="设备管理" description="设备管理" />
+        <siteMapNode url="~/manager-project.aspx" title="方案管理" description="方案管理" />
       </siteMapNode>
     </siteMapNode>
 </siteMap>
